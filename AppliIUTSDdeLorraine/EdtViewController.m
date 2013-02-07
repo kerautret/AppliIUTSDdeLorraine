@@ -65,14 +65,18 @@
     NSError *error = nil;
    
     
-    NSString *urlAddress = @"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/SRC1.gif";
-    urlAddress= [urlAddress stringByReplacingOccurrencesOfString:@"!"withString:@"%%"];
-    NSLog(urlAddress);
-    NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+     NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
+     NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding: NSASCIIStringEncoding error:&error];
+     NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
+     NSString *Tree = @"5928%2C5930%2C5925%2C5926";
+     NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=24&idPianoDay=%@&idTree=%@&width=800&height=600&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126",maj, day, Tree];
+     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
+       NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    NSLog(@"URL====%@===",urlAddress);
     NSHTTPURLResponse *response=nil;
     NSData *data = [NSURLConnection sendSynchronousRequest:requestObj returningResponse:&response error: &error];
-    //NSLog(@"errr=%@",[error debugDescription description]);
+    NSLog(@"errr=%@",[error description]);
 
     [self.imgEdt setImage:  [UIImage imageWithData: data]];
     
