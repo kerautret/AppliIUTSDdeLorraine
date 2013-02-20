@@ -1590,7 +1590,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gf1-ND-4g2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1221" y="-3753"/>
+            <point key="canvasLocation" x="859" y="-3641"/>
         </scene>
         <!--Preferences View Controller - Autre 2-->
         <scene sceneID="qdJ-Io-bTr">
