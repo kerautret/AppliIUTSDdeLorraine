@@ -14,7 +14,7 @@
 
 @implementation SelectEDTController
 
-@synthesize myEDTName, myEDTCode;
+@synthesize myEDTName, myEDTCode, viewAnimates, topImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

@@ -13,6 +13,7 @@
 @end
 
 @implementation EtudiantController
+@synthesize  topImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

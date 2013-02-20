@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface EtudiantController : UIViewController{
-    
+    IBOutlet UIImageView *topImage;
 }
 
-
+@property (nonatomic, retain) IBOutlet UIImageView *topImage;
 - (IBAction)back:(id)sender;
 
 @end

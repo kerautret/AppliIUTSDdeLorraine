@@ -11,12 +11,16 @@
 @interface SelectEDTController : UIViewController{
     NSMutableString *myEDTName;
     NSMutableString *myEDTCode;
+    IBOutlet UIView *viewAnimates;
+    IBOutlet UIImageView *topImage;
 
 }
 @property (nonatomic, retain) NSMutableString *myEDTName;
 @property (nonatomic, retain) NSMutableString *myEDTCode;
 
+@property (nonatomic, retain) UIView *viewAnimates;
 
+@property (nonatomic, retain) IBOutlet UIImageView *topImage;
 
 - (IBAction)back:(id)sender;
 

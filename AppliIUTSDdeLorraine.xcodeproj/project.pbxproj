@@ -61,6 +61,8 @@
 		CD21423C16CF81CF0048D002 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D730916BD414300934CBC /* Utils.m */; };
 		CD24320C16D2629500D8C039 /* SpecialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320B16D2629500D8C039 /* SpecialAnimation.m */; };
 		CD24320F16D2684200D8C039 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320E16D2684100D8C039 /* MapController.m */; };
+		CD29E62716D506C700F246BB /* SlideFromBottomAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = CD29E62616D506C700F246BB /* SlideFromBottomAnim.m */; };
+		CD29E62816D50F9500F246BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */; };
 		CD71622E16BC663D0077FDFD /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622D16BC663D0077FDFD /* absences.png */; };
 		CD71623016BC66490077FDFD /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622F16BC66490077FDFD /* edt.png */; };
 		CD71623216BC665B0077FDFD /* nouveautes.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623116BC665B0077FDFD /* nouveautes.png */; };
@@ -154,6 +156,8 @@
 		CD24320B16D2629500D8C039 /* SpecialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialAnimation.m; sourceTree = "<group>"; };
 		CD24320D16D2684100D8C039 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		CD24320E16D2684100D8C039 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		CD29E62516D506C700F246BB /* SlideFromBottomAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideFromBottomAnim.h; sourceTree = "<group>"; };
+		CD29E62616D506C700F246BB /* SlideFromBottomAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideFromBottomAnim.m; sourceTree = "<group>"; };
 		CD71622D16BC663D0077FDFD /* absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = absences.png; sourceTree = "<group>"; };
 		CD71622F16BC66490077FDFD /* edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt.png; sourceTree = "<group>"; };
 		CD71623116BC665B0077FDFD /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nouveautes.png; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD29E62816D50F9500F246BB /* QuartzCore.framework in Frameworks */,
 				CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */,
 				6D547246167B3506003F58A5 /* UIKit.framework in Frameworks */,
 				6D547248167B3506003F58A5 /* Foundation.framework in Frameworks */,
@@ -354,6 +359,8 @@
 			children = (
 				CD24320A16D2629500D8C039 /* SpecialAnimation.h */,
 				CD24320B16D2629500D8C039 /* SpecialAnimation.m */,
+				CD29E62516D506C700F246BB /* SlideFromBottomAnim.h */,
+				CD29E62616D506C700F246BB /* SlideFromBottomAnim.m */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -537,6 +544,7 @@
 				CD24320F16D2684200D8C039 /* MapController.m in Sources */,
 				6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */,
 				CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */,
+				CD29E62716D506C700F246BB /* SlideFromBottomAnim.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
