@@ -7,7 +7,7 @@
 //
 
 #import "SelectEDTController.h"
-
+#import "EtudiantController.h"
 @interface SelectEDTController ()
 
 @end
@@ -109,7 +109,22 @@
 
 
 - (IBAction)back:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    
+    UIView * previousView = [(EtudiantController*)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.75
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(EtudiantController*)[self presentingViewController] view] insertSubview: previousView belowSubview: [(EtudiantController*)[self presentingViewController] topImage] ];
+                        [self dismissModalViewControllerAnimated:NO];
+                         
+                     }];
+    
 }
 
 

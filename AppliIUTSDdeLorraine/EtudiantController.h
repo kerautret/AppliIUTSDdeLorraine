@@ -10,9 +10,13 @@
 
 @interface EtudiantController : UIViewController{
     IBOutlet UIImageView *topImage;
+    IBOutlet UIView *viewAnimates;
+    
 }
 
 @property (nonatomic, retain) IBOutlet UIImageView *topImage;
+@property (nonatomic, retain) IBOutlet UIView *viewAnimates;
+
 - (IBAction)back:(id)sender;
 
 @end
