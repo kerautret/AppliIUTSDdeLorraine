@@ -14,8 +14,8 @@
 
 -(void) perform {
     
-    EtudiantController *src = (EtudiantController *) self.sourceViewController;
-    SelectEDTController *dest = (SelectEDTController *) self.destinationViewController;
+    UIViewController<SlidableView> *src =  self.sourceViewController;
+    UIViewController<SlidableView> *dest =  self.destinationViewController;
     
     [dest loadView];
     //[dest.viewAnimates setTransform:CGAffineTransformMakeTranslation(0, dest.viewAnimates.frame.size.height)];

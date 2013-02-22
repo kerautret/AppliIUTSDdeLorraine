@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SlidableView.h"
 
-@interface SelectEDTController : UIViewController{
+@interface SelectEDTController : UIViewController<SlidableView>{
     NSMutableString *myEDTName;
     NSMutableString *myEDTCode;
     IBOutlet UIView *viewAnimates;

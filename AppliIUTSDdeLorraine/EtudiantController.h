@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SlidableView.h"
 
-@interface EtudiantController : UIViewController{
+@interface EtudiantController : UIViewController<SlidableView>{
     IBOutlet UIImageView *topImage;
     IBOutlet UIView *viewAnimates;
     

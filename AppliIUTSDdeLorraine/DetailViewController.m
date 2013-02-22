@@ -57,11 +57,9 @@
 }
 
 - (void)dealloc {
-    [_dismiss release];
     [super dealloc];
 }
 - (void)viewDidUnload {
-    [self setDismiss:nil];
     [super viewDidUnload];
 }
 - (IBAction)dismissAction:(id)sender {

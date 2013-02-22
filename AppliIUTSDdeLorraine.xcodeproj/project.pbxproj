@@ -54,7 +54,6 @@
 		6D547277167B3506003F58A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D547275167B3506003F58A5 /* InfoPlist.strings */; };
 		6D54727A167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547279167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m */; };
 		6D547285167B3631003F58A5 /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547284167B3631003F58A5 /* StartController.m */; };
-		6D547287167B3B3F003F58A5 /* dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D547286167B3B3F003F58A5 /* dictionary.plist */; };
 		6D54728D167B3CFE003F58A5 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728C167B3CFE003F58A5 /* icone.png */; };
 		6D54728F167B3D45003F58A5 /* retinalol.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728E167B3D45003F58A5 /* retinalol.png */; };
 		6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */; };
@@ -146,7 +145,6 @@
 		6D547279167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppliIUTSDdeLorraineTests.m; sourceTree = "<group>"; };
 		6D547283167B3631003F58A5 /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
 		6D547284167B3631003F58A5 /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
-		6D547286167B3B3F003F58A5 /* dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dictionary.plist; sourceTree = "<group>"; };
 		6D54728C167B3CFE003F58A5 /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icone.png; path = ../icone.png; sourceTree = "<group>"; };
 		6D54728E167B3D45003F58A5 /* retinalol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retinalol.png; path = ../retinalol.png; sourceTree = "<group>"; };
 		6D98D2CF167F5C47009A5C84 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -168,6 +166,7 @@
 		CD9D730816BD414300934CBC /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		CD9D730916BD414300934CBC /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		CD9D730B16BD438500934CBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CDA3ACF916D78858004E2CFC /* SlidableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidableView.h; sourceTree = "<group>"; };
 		CDA5245A16D4431A004A7C42 /* IUTLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUTLocation.h; sourceTree = "<group>"; };
 		CDA5245B16D4431A004A7C42 /* IUTLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUTLocation.m; sourceTree = "<group>"; };
 		CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logoIUT.jpeg; sourceTree = "<group>"; };
@@ -208,6 +207,8 @@
 		22089E9D169D9F0900298246 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				6D54728C167B3CFE003F58A5 /* icone.png */,
+				6D54728E167B3D45003F58A5 /* retinalol.png */,
 				CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */,
 				22089E9F169D9F2700298246 /* appli.png */,
 				22089EA0169D9F2700298246 /* bg_black.png */,
@@ -233,17 +234,6 @@
 				22089EA9169D9F2700298246 /* visite.png */,
 			);
 			name = source;
-			sourceTree = "<group>";
-		};
-		22516D2516CD819000896F5A /* EDT */ = {
-			isa = PBXGroup;
-			children = (
-				22A2F1DF16C1608C00220945 /* EdtViewController.h */,
-				22A2F1E016C1608C00220945 /* EdtViewController.m */,
-				CDDFDE9D16CFB4AF005FD7A0 /* SelectEDTController.h */,
-				CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */,
-			);
-			name = EDT;
 			sourceTree = "<group>";
 		};
 		6D547236167B3506003F58A5 = {
@@ -284,39 +274,23 @@
 		6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */ = {
 			isa = PBXGroup;
 			children = (
+				CDA3ACF816D787D3004E2CFC /* Controller */,
 				CD24320916D2626100D8C039 /* Animations */,
 				CD9D730716BD412300934CBC /* Utils */,
 				CDA5245916D4427B004A7C42 /* Map */,
-				22516D2516CD819000896F5A /* EDT */,
-				6D04C43316A8460B000A228F /* DetailViewController.m */,
-				6D04C43216A8460B000A228F /* DetailViewController.h */,
-				6D54728C167B3CFE003F58A5 /* icone.png */,
-				6D54728E167B3D45003F58A5 /* retinalol.png */,
 				6D547254167B3506003F58A5 /* AppDelegate.h */,
 				6D547255167B3506003F58A5 /* AppDelegate.m */,
-				CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */,
-				CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */,
 				6D54725D167B3506003F58A5 /* MainStoryboard_iPhone.storyboard */,
-				6D9D098416D3D24D003F4DD8 /* PreferencesViewController.h */,
-				6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */,
-				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
-				6D2A6383167B650700BAC6A8 /* RootViewController.m */,
 				6D547260167B3506003F58A5 /* MainStoryboard_iPad.storyboard */,
-				6D547264167B3506003F58A5 /* ViewController.m */,
-				6D547263167B3506003F58A5 /* ViewController.h */,
-				22407D51169E168000AB16CE /* WebView.h */,
-				22407D52169E168000AB16CE /* WebView.m */,
-				22407D54169E16A900AB16CE /* WebViewController.h */,
-				22407D55169E16A900AB16CE /* WebViewController.m */,
-				22089E9D169D9F0900298246 /* source */,
-				6D547283167B3631003F58A5 /* StartController.h */,
-				6D547284167B3631003F58A5 /* StartController.m */,
-				6D54724C167B3506003F58A5 /* Supporting Files */,
-				6D547286167B3B3F003F58A5 /* dictionary.plist */,
+				22A2F1DF16C1608C00220945 /* EdtViewController.h */,
+				22A2F1E016C1608C00220945 /* EdtViewController.m */,
 				6D2A637F167B617B00BAC6A8 /* News.h */,
 				6D2A6380167B617B00BAC6A8 /* News.m */,
-				CD7BE61E16D03FC0006D09D1 /* InfoDeptController.h */,
-				CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */,
+				22407D51169E168000AB16CE /* WebView.h */,
+				22407D52169E168000AB16CE /* WebView.m */,
+				22089E9D169D9F0900298246 /* source */,
+				6D54724C167B3506003F58A5 /* Supporting Files */,
+				CDA3ACF916D78858004E2CFC /* SlidableView.h */,
 			);
 			path = AppliIUTSDdeLorraine;
 			sourceTree = "<group>";
@@ -372,6 +346,31 @@
 				CD9D730916BD414300934CBC /* Utils.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		CDA3ACF816D787D3004E2CFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD7BE61E16D03FC0006D09D1 /* InfoDeptController.h */,
+				CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */,
+				CDDFDE9D16CFB4AF005FD7A0 /* SelectEDTController.h */,
+				CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */,
+				6D04C43316A8460B000A228F /* DetailViewController.m */,
+				6D04C43216A8460B000A228F /* DetailViewController.h */,
+				CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */,
+				CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */,
+				6D9D098416D3D24D003F4DD8 /* PreferencesViewController.h */,
+				6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */,
+				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
+				6D2A6383167B650700BAC6A8 /* RootViewController.m */,
+				6D547264167B3506003F58A5 /* ViewController.m */,
+				6D547263167B3506003F58A5 /* ViewController.h */,
+				22407D54169E16A900AB16CE /* WebViewController.h */,
+				22407D55169E16A900AB16CE /* WebViewController.m */,
+				6D547283167B3631003F58A5 /* StartController.h */,
+				6D547284167B3631003F58A5 /* StartController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		CDA5245916D4427B004A7C42 /* Map */ = {
@@ -462,7 +461,6 @@
 				6D54725C167B3506003F58A5 /* Default-568h@2x.png in Resources */,
 				6D54725F167B3506003F58A5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				6D547262167B3506003F58A5 /* MainStoryboard_iPad.storyboard in Resources */,
-				6D547287167B3B3F003F58A5 /* dictionary.plist in Resources */,
 				6D54728D167B3CFE003F58A5 /* icone.png in Resources */,
 				6D54728F167B3D45003F58A5 /* retinalol.png in Resources */,
 				22089EAA169D9F2700298246 /* appli.png in Resources */,

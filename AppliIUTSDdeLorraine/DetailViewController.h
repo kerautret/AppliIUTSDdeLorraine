@@ -13,7 +13,6 @@
     IBOutlet UILabel *contenu;
     
 }
-@property (retain, nonatomic) IBOutlet UIButton *dismiss;
 - (IBAction)dismissAction:(id)sender;
 @property (nonatomic, retain) IBOutlet UILabel *titre;
 @property (nonatomic, retain) IBOutlet UILabel *contenu;
